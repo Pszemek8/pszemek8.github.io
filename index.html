@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nowoczesna strona Pszemka — moje miejsce w internecie.">
+  <title>Pszemek — Moja strona</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#start" aria-label="Pszemek — strona główna">P<span>.</span></a>
+    <button class="menu-toggle" aria-label="Otwórz menu" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Główna nawigacja">
+      <a href="#start">Start</a>
+      <a href="#o-mnie">O stronie</a>
+      <a href="#projekty">Projekty</a>
+      <a href="#kontakt" class="nav-cta">Kontakt ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="start">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> WITAJ W MOIM KĄCIKU INTERNETU</p>
+        <h1>Hej, jestem <span class="gradient-text">Pszemek.</span><br>Miło Cię widzieć!</h1>
+        <p class="hero-description">To moja mała przestrzeń w sieci. Znajdziesz tu moje projekty, pomysły i rzeczy, które tworzę. Rozgość się! ✨</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projekty">Zobacz projekty <span>↘</span></a>
+          <a class="button secondary" href="#o-mnie">Poznaj stronę</a>
+        </div>
+        <div class="mini-note"><span class="sparkle">✦</span> Zrobione z ciekawością i odrobiną kodu.</div>
+      </div>
+      <div class="hero-art" aria-label="Dekoracyjna grafika z fioletowymi i niebieskimi kształtami">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="floating-card card-top"><span class="card-icon">✦</span><span>Kreatywność<br><small>bez limitów</small></span></div>
+        <div class="center-symbol">P<span>.</span></div>
+        <div class="floating-card card-bottom"><span class="tiny-bars">▂ ▅ ▇</span><span>Pomysł → projekt<br><small>i lecimy dalej</small></span></div>
+        <span class="star star-a">✦</span><span class="star star-b">✧</span><span class="star star-c">✦</span>
+      </div>
+    </section>
+
+    <section class="about section" id="o-mnie">
+      <div class="section-heading">
+        <p class="eyebrow">DOBRZE, ŻE JESTEŚ</p>
+        <h2>Mała strona.<br><span class="gradient-text">Wielkie pomysły.</span></h2>
+      </div>
+      <div class="about-content">
+        <p>Ta strona to mój własny kawałek internetu. Będę ją rozwijać, dodawać nowe rzeczy i testować pomysły. Najlepsze jest to, że mogę zmieniać ją tak, jak tylko chcę.</p>
+        <div class="feature-list">
+          <div class="feature"><span>🎨</span><div><strong>Twórczość</strong><small>Pomysły, kolory i nowe rzeczy.</small></div></div>
+          <div class="feature"><span>💻</span><div><strong>Kodowanie</strong><small>Uczę się i buduję krok po kroku.</small></div></div>
+          <div class="feature"><span>🚀</span><div><strong>Rozwój</strong><small>Ta strona będzie coraz lepsza.</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projekty">
+      <div class="projects-heading">
+        <div><p class="eyebrow">CO TU ZNAJDZIESZ?</p><h2>Moje <span class="gradient-text">projekty</span></h2></div>
+        <p>To przykładowe karty — później możesz podmienić je na swoje prawdziwe projekty.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card project-purple">
+          <div class="project-visual visual-code"><span>&lt;/&gt;</span><i>✦</i><b>01</b></div>
+          <div class="project-info"><span class="tag">HTML + CSS</span><h3>Pierwsza strona</h3><p>Strona stworzona przeze mnie od podstaw.</p><a href="#kontakt">Zobacz więcej <span>↗</span></a></div>
+        </article>
+        <article class="project-card project-blue">
+          <div class="project-visual visual-shapes"><span class="shape-circle"></span><span class="shape-square"></span><span class="shape-diamond"></span><b>02</b></div>
+          <div class="project-info"><span class="tag">DESIGN</span><h3>Kolory i pomysły</h3><p>Eksperymenty z wyglądem i kreatywnymi pomysłami.</p><a href="#kontakt">Zobacz więcej <span>↗</span></a></div>
+        </article>
+        <article class="project-card project-pink">
+          <div class="project-visual visual-js"><span>JS</span><i>✧</i><b>03</b></div>
+          <div class="project-info"><span class="tag">JAVASCRIPT</span><h3>Małe eksperymenty</h3><p>Interakcje, przyciski i inne fajne bajery.</p><a href="#kontakt">Zobacz więcej <span>↗</span></a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="kontakt">
+      <div class="contact-panel">
+        <div><p class="eyebrow">TO JESZCZE NIE KONIEC</p><h2>Masz pomysł?<br><span class="gradient-text">Działajmy!</span></h2><p>Strona jest dopiero początkiem. Wróć tu później, żeby zobaczyć, co nowego.</p></div>
+        <a class="button primary" href="#start">Na górę strony ↑</a>
+        <div class="contact-glow"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#start">P<span>.</span></a>
+    <p>© <span id="year"></span> Pszemek. Zrobione z ✦ i kodu.</p>
+    <a href="#start" class="back-top">Do góry ↑</a>
+  </footer>
+</body>
+</html>
